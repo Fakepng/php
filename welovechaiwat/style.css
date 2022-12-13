@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100vw;
+}
+
+nav {
+  background-color: #2540af;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.title {
+  text-align: center;
+}
