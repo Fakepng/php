@@ -24,7 +24,7 @@ if (isset($_POST)) {
 
   if (count($errors) > 0) {
     $_SESSION["errors"] = $errors;
-    header("location: user.php");
+    header("location: new_post.php");
   } else {
     $query_sql = "INSERT INTO posts (title, content, owner_username) VALUES ('$title','$content','$username');";
     mysqli_query($conn, $query_sql);

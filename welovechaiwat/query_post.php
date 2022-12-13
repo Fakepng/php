@@ -29,19 +29,21 @@ $posts = mysqli_fetch_all($query);
     $post["star"] = 0;
   }
   ?>
-  <h3><?php echo $post["1"] ?></h3>
-  <p><?php echo $post["2"] ?></p>
-  <form action="add_star.php" method="post">
-    <label for="star">Star</label>
-    <input type="number" name="star" value=5 min=1 max=5>
-    <input type="hidden" name="post" value="<?php echo $post_id ?>">
-    <button type="submit">Submit</button>
-  </form>
-  <p>Total: <?php echo $post["star"] ?></p>
-  <?php foreach($stars as $star): ?>
-    <p><?php echo $star["3"] ?>: <?php echo $star["1"] ?></p>
-  <?php endforeach; ?>
-  <p><?php echo $post["3"] ?></p>
-  <hr>
+  <div class="post">
+    <h3><?php echo $post["1"] ?></h3>
+    <p><?php echo $post["2"] ?></p>
+    <form action="add_star.php" method="post">
+      <label for="star">Star</label>
+      <input type="number" name="star" value=5 min=1 max=5>
+      <input type="hidden" name="post" value="<?php echo $post_id ?>">
+      <button type="submit">Submit</button>
+    </form>
+    <p>Total: <?php echo $post["star"] ?></p>
+    <?php foreach($stars as $star): ?>
+      <p><?php echo $star["3"] ?>: <?php echo $star["1"] ?></p>
+    <?php endforeach; ?>
+    <p><?php echo $post["3"] ?></p>
+    <hr>
+  </div>
 <?php endforeach; ?>
 </section>

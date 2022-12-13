@@ -14,7 +14,8 @@ if (!isset($_SESSION["username"])) {
     <title>New Post</title>
   </head>
   <body>
-    <?php include("navbar.php");?>
+    <?php include("navbar.html");?>
+    <?php include("errors.php"); ?>
     <form action="new_post_db.php" method="post">
       <label for="title">Title</label>
       <input type="text" name="title" required>

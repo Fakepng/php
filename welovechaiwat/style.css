@@ -12,21 +12,88 @@ body {
 }
 
 nav {
-  background-color: #2540af;
+  background-color: #001e36;
+  font-family: Myriad Pro;
+}
+
+label.logo {
+  margin: 0 15px;
+  color: #31a8ff;
+  font-size: 35pt;
+  font-weight: bold;
+  line-height: 80px;
+}
+
+label.username {
+  margin: 0 15px;
+  color: #31a8ff;
+  font-size: 20pt;
+  font-weight: bold;
+  line-height: 80px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
 }
 
 nav ul li {
-  list-style-type: none;
+  display: inline-block;
+  line-height: 80px;
+  font-size: 16pt;
 }
 
 nav ul li a {
-  
-
-.container {
-  margin: 0 auto;
-  width: 80%;
+  text-decoration: none;
+  color: #31a8ff;
+  padding: 7px 13px;
+  margin: 0 25px;
 }
 
-.title {
-  text-align: center;
+nav ul li.active a,
+nav ul li a:hover {
+  color: #001e36;
+  background-color: #31a8ff;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  width: 10%;
+}
+.error {
+  opacity: 0;
+  padding: 1em;
+  border-radius: 5px;
+  border: 0.2em solid red;
+  background-color: rgb(226, 93, 107);
+  color: rgb(255, 255, 255);
+  animation: dropdown 5s ease-out;
+}
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
 }

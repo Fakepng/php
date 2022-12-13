@@ -1,0 +1,29 @@
+.post {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #001e36;
+  color: #31a8ff;
+}
+
+.username {
+  margin: 20px;
+  text-align: center;
+}
+
+.username p a {
+  text-decoration: none;
+  background-color: #001e36;
+  color: #31a8ff;
+  padding: 7px 13px;
+  margin: 15px 0;
+}
+
+.username p a:hover {
+  text-decoration: none;
+  color: #001e36;
+  background-color: #31a8ff;
+  padding: 7px 13px;
+  margin: 15px 0;
+  border-radius: 5px;
+  transition: 0.5s;
+}
